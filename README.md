@@ -35,3 +35,7 @@ $ yarn run test:e2e
 # test coverage
 $ yarn run test:cov
 ```
+
+## Postman Collection
+
+Check the postman collection stored on `docs/postman` to see all the API services this microservices exposes.
