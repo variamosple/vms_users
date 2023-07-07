@@ -34,7 +34,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{vars.ACR}}/${{secrets.ACRUSERNAME}}/variamosusers:latest
+        tags: ${{vars.ACR}}/${{secrets.ACRUSERNAME}}/variamos_ms_users:latest
         file: ./Dockerfile
 
   deploy:
@@ -49,7 +49,7 @@ jobs:
       id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'VariamosUsers2024'
+        app-name: 'variamos-ms-users'
         slot-name: 'production'
         publish-profile: ${{secrets.PRODUCTIONSLOTPUBLISHPROFILE}}
-        images: '${{vars.ACR}}/${{secrets.ACRUSERNAME}}/variamosusers:latest'
+        images: '${{vars.ACR}}/${{secrets.ACRUSERNAME}}/variamos_ms_users:latest'
