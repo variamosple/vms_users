@@ -10,6 +10,19 @@ Microservice that allows to get Variamos users.
 $ yarn install
 ```
 
+## Set environment variables
+
+If you want to configure the database connection settings you can create a `.env` file or declare the following variables on your environment:
+
+```bash
+DATABASE_HOST=
+DATABASE_PORT=
+DATABASE_USERNAME=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+DATABASE_SCHEMA=
+```
+
 ## Running the app
 
 ```bash
